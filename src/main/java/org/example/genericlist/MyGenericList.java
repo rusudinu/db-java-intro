@@ -7,7 +7,7 @@ public class MyGenericList<T> {
     List<T> list = new ArrayList<>();
 
     public void add(T element) {
-        list.add(element);
+        // TODO implement
     }
 
     public void print() {
@@ -15,10 +15,11 @@ public class MyGenericList<T> {
     }
 
     public boolean lookup(T element) {
-        return list.contains(element);
+        // TODO implement
+        return false;
     }
 
     public void remove(T element) {
-        list.remove(element);
+        // TODO implement
     }
 }

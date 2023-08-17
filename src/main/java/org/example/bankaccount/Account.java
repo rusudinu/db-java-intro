@@ -10,14 +10,11 @@ public class Account {
     private int nationalId;
 
     public void deposit(int amount) {
-        this.amount += amount;
+        // TODO implement
     }
 
     public void withdraw(int amount) {
-        if (this.amount < amount) {
-            throw new NotEnoughMoneyException("Not enough money");
-        }
-        this.amount -= amount;
+        // TODO implement
     }
 
     public void linkToNationalId(int nationalId) {

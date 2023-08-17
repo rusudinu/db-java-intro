@@ -21,20 +21,19 @@ public class Shelter<T extends Dog> implements IShelter {
 
     @Override
     public void receiveDonation(double amount) {
-        account.deposit(amount);
+        // TODO implement
     }
 
     @Override
     public void spend(double amount) {
-        account.withdraw(amount);
+        // TODO implement
     }
 
     public void addAnimal(T animal) {
-        animals.add(animal);
+        // TODO implement
     }
 
     public void feed(T animal) {
-        spend(10);
-        animal.setHungry(false);
+        // TODO implement
     }
 }

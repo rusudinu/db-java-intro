@@ -5,7 +5,7 @@ public class Main {
         GenericsDemo<Integer> genericsDemo = new GenericsDemo<>();
         genericsDemo.setX(1);
         System.out.println(genericsDemo.getX());
-        // genericsDemo.setX("a");
+
         GenericsDemo<String> newGenericsDemo = new GenericsDemo<>();
         newGenericsDemo.setX("a");
         System.out.println(newGenericsDemo.getX());

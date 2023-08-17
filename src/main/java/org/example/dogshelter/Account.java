@@ -1,7 +1,6 @@
 package org.example.dogshelter;
 
 import lombok.Data;
-import org.example.bankaccount.NotEnoughMoneyException;
 
 import java.util.Date;
 
@@ -14,13 +13,10 @@ public class Account {
     private double interest;
 
     public void deposit(double amount) {
-        this.amount += amount;
+        // TODO implement
     }
 
     public void withdraw(double amount) {
-        if (this.amount < amount) {
-            throw new NotEnoughMoneyException("Not enough money");
-        }
-        this.amount -= amount;
+        // TODO implement
     }
 }

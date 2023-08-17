@@ -1,5 +1,7 @@
 package org.example.bankaccount;
 
 public class NotEnoughMoneyException extends RuntimeException {
-    // TODO implement
+    public NotEnoughMoneyException(String message) {
+        super(message);
+    }
 }

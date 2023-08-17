@@ -10,11 +10,27 @@ public class Account {
     private int nationalId;
 
     public void deposit(int amount) {
-        // TODO implement
+        if (amount < 0) {
+            throw new DepositAmountException("Invalid amount");
+        }
+
+        if (this.amount + amount > Double.MAX_VALUE) {
+            throw new DepositAmountException("Amount overflow");
+        }
+
+        this.amount += amount;
     }
 
     public void withdraw(int amount) {
-        // TODO implement
+        if (amount < 0) {
+            throw new DepositAmountException("Invalid amount");
+        }
+
+        if (this.amount < amount) {
+            throw new NotEnoughMoneyException("Not enough money");
+        }
+
+        this.amount -= amount;
     }
 
     public void linkToNationalId(int nationalId) {

@@ -9,5 +9,9 @@ public class Main {
         System.out.println(stringList.lookup("Hello"));
         stringList.remove("Hello");
         stringList.print();
+
+//        String x = "lllll";
+//        x = x.replaceAll("l", "llllllllll");
+//        x.repeat(10);
     }
 }

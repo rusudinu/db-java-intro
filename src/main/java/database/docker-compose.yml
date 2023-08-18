@@ -1,0 +1,20 @@
+version: '3'
+services:
+  sql:
+    image: mysql:8.0.32
+    container_name: sql-demo-clodschool
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=topsecretpassword
+#  oracle-db:
+#    image: doctorkirk/oracle-19c
+#    container_name: oracle-demo-clodschool
+#    ports:
+#      - "1521:1521"
+#    environment:
+#      - ORACLE_PWD=topsecretpassword
+#      - ORACLE_DB=ORCLCDB
+#      - ORACLE_SID=ORCLCDB

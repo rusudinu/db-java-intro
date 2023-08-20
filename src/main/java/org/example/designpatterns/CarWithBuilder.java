@@ -1,4 +1,4 @@
-package designpatterns;
+package org.example.designpatterns;
 
 import lombok.ToString;
 

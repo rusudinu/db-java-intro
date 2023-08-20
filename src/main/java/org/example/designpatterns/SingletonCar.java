@@ -1,4 +1,4 @@
-package designpatterns;
+package org.example.designpatterns;
 
 public class SingletonCar {
     private static SingletonCar instance = null;

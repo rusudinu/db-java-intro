@@ -1,4 +1,4 @@
-package threads;
+package org.example.threads;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,10 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeThread extends Thread {
+public class EmployeeRunnable implements Runnable {
     int no;
 
-    @Override
     public void run() {
         System.out.println("EmployeeRunnable " + no + " is running");
     }

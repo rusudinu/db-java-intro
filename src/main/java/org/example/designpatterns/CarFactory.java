@@ -1,4 +1,4 @@
-package designpatterns;
+package org.example.designpatterns;
 
 enum CarType {
     DACIA, RENAULT, PORSCHE

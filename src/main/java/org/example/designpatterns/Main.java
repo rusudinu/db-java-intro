@@ -1,4 +1,4 @@
-package designpatterns;
+package org.example.designpatterns;
 
 public class Main {
     public static void main(String[] args) {

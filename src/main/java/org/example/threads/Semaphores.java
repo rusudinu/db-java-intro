@@ -1,4 +1,4 @@
-package threads;
+package org.example.threads;
 
 import java.util.concurrent.Semaphore;
 

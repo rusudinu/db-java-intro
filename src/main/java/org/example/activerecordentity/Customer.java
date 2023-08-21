@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ActiveRecordEntity(tableName = "customers", primaryKey = "customerId")
+// TODO ADD THE ANNOTATION
 public class Customer {
     private String name;
     private int age;

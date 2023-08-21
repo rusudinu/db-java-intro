@@ -6,10 +6,8 @@ import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE) // can use in class only.
+@Target(ElementType.TYPE)
 public @interface ActiveRecordEntity {
 
-    public String tableName();
-
-    public String primaryKey();
+    // TODO CREATE THE FIELDS
 }

@@ -13,21 +13,20 @@ public class ActiveRecord<T> {
 
     public void select() {
         ActiveRecordEntity entity = type.getAnnotation(ActiveRecordEntity.class);
-        System.out.println("SELECT * FROM " + entity.tableName());
+        // TODO AFTER CREATING THE ANNOTATION, UNCOMMENT THE PIECE BELOW
+        // System.out.println("SELECT * FROM " + entity.tableName());
     }
 
     public void update() {
-        ActiveRecordEntity entity = type.getAnnotation(ActiveRecordEntity.class);
-        System.out.println("UPDATE " + entity.tableName());
+        // TODO FILL IN MISSING CODE AND UNCOMMENT THE PIECE BELOW
+        // System.out.println("UPDATE " + entity.tableName());
     }
 
     public void insert() {
-        ActiveRecordEntity entity = type.getAnnotation(ActiveRecordEntity.class);
-        System.out.println("INSERT INTO " + entity.tableName());
+        // TODO IMPLEMENT
     }
 
     public void delete() {
-        ActiveRecordEntity entity = type.getAnnotation(ActiveRecordEntity.class);
-        System.out.println("DELETE FROM " + entity.tableName());
+        // TODO IMPLEMENT
     }
 }

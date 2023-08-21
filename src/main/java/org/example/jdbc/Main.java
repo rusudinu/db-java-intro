@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-        String connectionUrl = "jdbc:mysql://localhost:3306/<database-name>";
+        String connectionUrl = "jdbc:mysql://localhost:3306/my_sql_demo";
         String username = "root";
         String password = "topsecretpassword";
 

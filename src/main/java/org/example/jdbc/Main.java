@@ -19,7 +19,7 @@ public class Main {
             insertToy("Mickey Mouse 2", 20);
             insertToy("Mickey Mouse 3", 30);
             getToy(1);
-            
+
             deleteToy(3);
             getAllToys();
 
@@ -47,26 +47,15 @@ public class Main {
     }
 
     private static void getToy(int id) throws SQLException {
-        PreparedStatement ps3 = connection.prepareStatement("SELECT * FROM toys WHERE id = ?");
-        ps3.setInt(1, id);
-        ResultSet rs2 = ps3.executeQuery();
-        while (rs2.next()) {
-            Toy c = new Toy(rs2.getString("name"), rs2.getInt("stock"));
-            System.out.println(c);
-        }
+        // TODO IMPLEMENT
     }
 
     private static void updateToy(int id, int stock) throws SQLException {
-        PreparedStatement ps4 = connection.prepareStatement("UPDATE toys SET stock = ? WHERE id = ?");
-        ps4.setInt(1, stock);
-        ps4.setInt(2, id);
-        ps4.execute();
+        // TODO IMPLEMENT
     }
 
     private static void deleteToy(int id) throws SQLException {
-        PreparedStatement ps5 = connection.prepareStatement("DELETE FROM toys WHERE id = ?");
-        ps5.setInt(1, id);
-        ps5.execute();
+        // TODO IMPLEMENT
     }
 
 }

@@ -18,9 +18,9 @@ public class Main {
             insertToy("Mickey Mouse", 10);
             insertToy("Mickey Mouse 2", 20);
             insertToy("Mickey Mouse 3", 30);
-            getToy(1);
-            
-            deleteToy(3);
+            getToy(2);
+            updateToy(2, 50);
+            deleteToy(4);
             getAllToys();
 
         } finally {
